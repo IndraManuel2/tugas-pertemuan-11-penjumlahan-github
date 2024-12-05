@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Web- JavaScript
+</title>
+</head>
+<body>
+<center>
+<p><h3>Penjumlahan</h3>
+Bilangan 1
+<input type="number" name="bilangan1" value="Input Angka" id="bilangan1">
+<br><br>
+Bilangan 2
+<input type="number" name="bilangan2" value="Input Angka" id="bilangan2">
+</p>
+<button onclick="click1()">Submit</button>
+<p id="hasil"></p>
+</center>
+<script>
+function click1() {
+var bil1 = document.getElementById("bilangan1").value;
+var bil2 = document.getElementById("bilangan2").value;
+var hasil = parseInt(bil1) + parseInt(bil2) ;
+document.getElementById("hasil").innerHTML = "Hasil = "+hasil;
+}
+</script>
+</body>
+</html>
